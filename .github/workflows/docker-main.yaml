@@ -28,7 +28,7 @@ jobs:
           sleep 5
 
       - name: Ejecutar pruebas
-        run: pytest tests/
+        run: pytest pruebas/
 
   build-and-publish:
     needs: test
