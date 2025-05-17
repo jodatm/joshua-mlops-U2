@@ -6,7 +6,8 @@ El objetivo es construir un modelo capaz de predecir si un paciente puede estar 
 
 Estructura del Repositorio
 
-📁 raiz del repositorio/
+```plaintext
+raiz del repositorio/
 │
 ├── DescripcionPipeline.md         # Explicación general del pipeline MLOps propuesto
 ├── Diagrama1.1.png                # Diagrama del flujo del pipeline (imagen PNG)
@@ -15,10 +16,16 @@ Estructura del Repositorio
 ├── Dockerfile                     # Imagen Docker que contiene el servicio
 ├── app.py                         # Servicio Flask que expone la API de predicción
 ├── predictor.py                   # Función que simula el modelo de predicción
-├── dependencias.txt               # Lista de dependencias necesarias
+├── dependencias.txt               # Lista de dependencias necesarias en python
 │
 ├── postman.png                    # Ejemplo de uso de la API con Postman
 └── README.md                      # Instrucciones de uso y documentación general
+│
+└── tests/                         # Carpeta con pruebas del servicio
+    ├── test_reportes.py           # Pruebas del modulo de reportes
+    └── test_predictor.py          # Pruebas unitarias
+```
+
 
 README.md                        # Este archivo
 
