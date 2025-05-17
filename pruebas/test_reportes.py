@@ -5,13 +5,17 @@ import requests
 API_URL = "http://localhost:5000"
 
 def test_estadisticas_vacias():
-    # Asegúrate que el archivo esté vacío al principio
     if os.path.exists("registro_predicciones.json"):
         os.remove("registro_predicciones.json")
-    
+
     r = requests.get(f"{API_URL}/reporte")
     data = r.json()
+
+    assert 'totales_por_categoria' in data
     assert data['totales_por_categoria'] == {}
+    assert data['ultimas_5_predicciones'] == []
+    assert data['fecha_ultima_prediccion'] is None
+
 
 def test_todas_las_categorias():
     entradas = [
