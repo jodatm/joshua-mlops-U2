@@ -19,7 +19,7 @@ def predecir_estado(fiebre, dolor, frecuencia_cardiaca):
         terminal = True
     elif frecuencia_cardiaca < 60 or frecuencia_cardiaca > 100:
         alteraciones += 1
-
+    
     if terminal:
         return "ENFERMEDAD TERMINAL"
     elif alteraciones == 0:
