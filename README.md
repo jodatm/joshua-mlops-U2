@@ -27,8 +27,6 @@ raiz del repositorio/
 ```
 
 
-README.md                        # Este archivo
-
 Estados de Salud Retornados por el Modelo
 
 La función simulada es capaz de retornar uno de los siguientes estados según los datos de entrada:
@@ -37,3 +35,13 @@ La función simulada es capaz de retornar uno de los siguientes estados según l
     ENFERMEDAD LEVE
     ENFERMEDAD AGUDA
     ENFERMEDAD CRÓNICA
+
+Para ver los actions:
+```python
+https://github.com/jodatm/joshua-mlops-U2/packages
+```
+
+Para descargar y probar la imagen de docker:
+```python
+docker pull ghcr.io/jodatm/predictor-enfermedades:latest
+```
